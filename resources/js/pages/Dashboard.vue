@@ -23,6 +23,11 @@
             <router-link :to="{ name: 'CategoriesList' }"
               >Categories List</router-link >
           </li>
+
+          <li>
+            <router-link :to="{ name: 'ProfileEdit' }"
+            >Edit Profile</router-link >
+          </li>
         </ul>
       </div>
     </div>
@@ -30,6 +35,8 @@
 
   <script>
   export default {
+    components: {},
+
     data() {
       return {
         name: "",
