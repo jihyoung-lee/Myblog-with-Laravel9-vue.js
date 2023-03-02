@@ -1,25 +1,46 @@
 <template>
-    <section class="single-blog-post">
-      <h1>About Me</h1>
-      <div class="single-blog-post-ContentImage" data-aos="fade-left">
-      </div>\
-      <img src="/images/pic1.jpg" alt="" />
-      <div>
-        <p class="about-text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, ut
-          tempore repellat molestias a distinctio fuga molestiae eaque laborum
-          vero eos, maiores fugit culpa porro delectus aliquam adipisci nisi
-          voluptas sequi odit, numquam architecto officia? Corrupti recusandae
-          beatae sint quasi iste libero maiores commodi odio molestias vel fugit,
-          omnis nobis consectetur harum veritatis necessitatibus asperiores
-          officiis. Dolores nemo voluptates.
-          <br /><br />
-          Adipisicing elit. Illum reprehenderit sapiente at ab amet, nobis porro
-          pariatur similique dicta nisi velit fugiat reiciendis, quos fuga nemo
-          aliquam aspernatur est vel. Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Omnis non ad veritatis. Lorem ipsum dolor sit amet
-          consectetur, adipisicing elit. Lorem ipsum dolor sit.
-        </p>
+  <div class="relative max-w-md mx-auto md:max-w-2xl mt-6 min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-xl mt-16">
+    <div class="px-6">
+      <div class="flex flex-wrap justify-center">
+        <div class="w-full flex justify-center">
+          <div class="relative">
+            <img src="/images/myprofile.png" class="shadow-xl rounded-full align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-[150px]"/>
+          </div>
+        </div>
+        <div class="w-full text-center mt-20">
+          <div class="flex justify-center lg:pt-4 pt-8 pb-0">
+            <div class="p-3 text-center">
+              <span class="text-sm text-slate-400">PHP Laravel</span>
+            </div>
+            <div class="p-3 text-center">
+
+              <span class="text-sm text-slate-400">Vue.js</span>
+            </div>
+
+            <div class="p-3 text-center">
+              <span class="text-sm text-slate-400">Mysql</span>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+      <div class="text-center mt-2">
+        <h3 class="text-2xl text-slate-700 font-bold leading-normal mb-1">Jihyoung Lee</h3>
+        <div class="text-xs mt-0 mb-2 text-slate-400 font-bold uppercase">
+          <i class="fas fa-map-marker-alt mr-2 text-slate-400 opacity-75"></i>Seoul, Korea
+        </div>
+      </div>
+      <div class="mt-6 py-6 border-t border-slate-200 text-center">
+        <div class="flex flex-wrap justify-center">
+          <div class="w-full px-4">
+            <p class="font-light leading-relaxed text-slate-600 mb-4">언제나 도전하고 공부하는 주니어 개발자</p>
+            <a href="https://github.com/jihyoung-lee" class="font-normal text-slate-700 hover:text-slate-400">Git Hub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="relative pt-6 pb-2 mt-6">
+  </footer>
   </template>

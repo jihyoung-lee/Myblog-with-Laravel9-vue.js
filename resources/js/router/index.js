@@ -17,6 +17,7 @@ import EditCategories from "../pages/categories/EditCategories.vue";
 import CreatePosts from "../pages/posts/CreatePosts.vue";
 import DashboardPostsList from "../pages/posts/DashboardPostsList.vue";
 import EditPosts from "../pages/posts/EditPosts.vue";
+import EditProfile from "../pages/profile/EditProfile.vue";
 
 const routes = [
     {
@@ -103,6 +104,13 @@ const routes = [
         path: "/posts/:slug/edit",
         name: "EditPosts",
         component: EditPosts,
+        meta: { requiresAuth: true },
+        props: true
+    },
+    {
+        path: "/profile/edit",
+        name: "EditProfile",
+        component: EditProfile,
         meta: { requiresAuth: true },
         props: true
     },

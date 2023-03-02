@@ -1,28 +1,32 @@
 <template>
-    <div id="create-categories">
-      <div id="contact-us">
-        <h1>Edit Category!</h1>
-        <!-- success message -->
-        <div class="success-msg" v-if="success">
-          <i class="fa fa-check"></i>
-          Update successfully
-        </div>
-        <div class="contact-form">
-          <form @submit.prevent="submit">
-            <label for="name"><span>Name</span></label>
-            <input type="text" id="name" v-model="field.name" />
-            <span v-if="errors.name" class="error">{{ errors.name[0] }}</span>
 
-            <input type="submit" value="Submit" />
-          </form>
+  <div class="min-h-screen w-full flex items-center justify-center bg-gray-50">
+    <div>
+      <!-- success message -->
+      <div class="success-msg" v-if="success">
+        <i class="fa fa-check"></i>
+        Update successfully
+      </div>
+      <form @submit.prevent="submit">
+        <h1 class="mb-1 font-bold text-3xl flex gap-1 items-baseline font-mono">Edit Category!</h1>
+        <div class="grid max-w-3xl gap-2 py-10 px-8 sm:grid-cols-2 bg-white rounded-md border-t-4 border-purple-400">
+          <div class="grid">
+            <div class="bg-white flex min-h-[60px] flex-col-reverse justify-center rounded-md border border-gray-300 px-3 py-2 shadow-sm focus-within:shadow-inner">
+              <input type="text" name="first-name" id="name" v-model="field.name" class="peer block w-full border-0 p-0 text-base text-gray-900 placeholder-gray-400 focus:ring-0" placeholder="category name" />
+              <label html="first-name" class="block transform text-xs font-bold uppercase text-gray-400 transition-opacity, duration-200 peer-placeholder-shown:h-0 peer-placeholder-shown:-translate-y-full peer-placeholder-shown:opacity-0">category name</label>
+            </div>
+          </div>
+          <button type="submit" class="mt-4 bg-purple-500 text-white py-2 px-6 rounded-md hover:bg-purple-600 ">submit</button>
         </div>
-        <div class="create-categories">
-            <router-link :to="{ name: 'CategoriesList' }"
-              >Categories List<span>&#8594;</span></router-link
-            >
+      </form>
+      <div class="create-categories">
+        <router-link :to="{ name: 'CategoriesList' }"
+        >Categories List<span>&#8594;</span></router-link
+        >
       </div>
     </div>
-    </div>
+  </div>
+
   </template>
 
   <script>
