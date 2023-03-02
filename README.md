@@ -5,7 +5,7 @@
 
 # Environment
 Laravel 9(PHP8.2), Vue.js, Nginx, Mysql, Uubuntu
-
+docker
 # 시연 영상
 
 
