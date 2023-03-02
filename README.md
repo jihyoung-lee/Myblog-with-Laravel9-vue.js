@@ -5,3 +5,9 @@
 
 # Environment
 Laravel 9(PHP8.2), Vue.js, Nginx, Mysql, Uubuntu
+
+# 시연 영상
+
+
+https://user-images.githubusercontent.com/67559886/222342955-740b8ab1-9f6b-4435-88cd-c3e44d222ff9.mp4
+
